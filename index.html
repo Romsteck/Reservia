@@ -7,95 +7,126 @@
     </head>
 	
     <body>
-		<div id="SiteHeader">
-			<header>
+		<header>
+			<a href="https://iis.mynetwk.biz/" id="SiteLogo">
 				<img src="images/logo/Reservia.svg" alt="Logo">
-			</header>
-			
+			</a>
+
 			<nav>
 				<ul id="Navigation">
-					<li>Hébergements</li>
-					<li>Activités</li>
+					<a href="">Hébergements</a>
+					<a href="">Activités</a>
+					<a href="">S'inscrire</a>
 				</ul>
 			</nav>
-		</div>
+		</header>
 		
-		<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-		<p>En plein centre ville ou en pleine nature</p>
-		
-		<div id="SearchInput">
-			<input type="text" id="SearchTextInput" name="name" required minlength="4" maxlength="8" size="10">
-			<button id="SearchButton">Rechercher</button>
-		</div>
-		
-		<div id="FilterSection">
-			<h5>Filtres</h5>
-			<ul id=Filters>
-				<li><p>Économiques</p></li>
-				<li><p>Familial</p></li>
-				<li><p>Romantique</p></li>
-				<li><p>Animaux autorisés</p></li>
-			</ul>
-		</div>
-		
-		<h4>Plus de 500 logements sont disponibles dans cette ville</h4>
-		
-		<section id="hebergements">
-			<div id="marseille">
+		<section>
+			<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+			<p>En plein centre ville ou en pleine nature</p>
+			
+			<form id="SearchInput">
+				<input type="text" id="SearchTextInput" name="name" required minlength="4" maxlength="8" size="10">
+				<button id="SearchButton">Rechercher</button>
+			</form>
+			
+			<div id="FilterSection">
+				<h5>Filtres</h5>
+				<ul id="Filters">
+					<li class="FilterButton">
+						<div></div>
+						<a>Économiques</a>
+					</li>
+					<li class="FilterButton">
+						<div></div>
+						<a>Familial</a>
+					</li>
+					<li class="FilterButton">
+						<div></div>
+						<a>Romantique</a>
+					</li>
+					<li class="FilterButton">
+						<div></div>
+						<a>Animaux autorisés</a>
+					</li>
+				</ul>
+			</div>
+			
+			
+			<h4>Plus de 500 logements sont disponibles dans cette ville</h4>
+		</section>
+
+
+		<div id="hebergements">
+			<section id="marseille">
 				<h2 id="GalleryTitles">Hébergements à Marseille</h2>
 				<ul>
-					<li id="ln1">
+					<a href="" id="card">
+						<span id="cadre">
+							<img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logo">
+						</span>
+						<span class="cadreTitre">Auberge la Cannebière</span>
+						<span class="cadrePrix">Nuit à partir de <mark>25$</mark></span>
+					</a>
+					<a href="" id="card">
+						<span id="cadre">
+							<img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Logo">
+						</span>
+						<span class="cadreTitre">Hôtel du port</span>
+						<span class="cadreTitre">Nuit à partir de <mark>35$</mark></span>
+					</li>
+					<a href="" id="card">
+						<span id="cadre">
+							<img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Logo">
+						</span>
+						<span class="cadreTitre">Hôtel Les mouettes</span>
+						<span class="cadreTitre">Nuit à partir de <mark>40$</mark></span>
+					</a>
+					<a href="" id="card">
+						<span id="cadre">
+							<img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Logo">
+						</span>
+						<span class="cadreTitre">Hôtel de la mer</span>
+						<span class="cadreTitre">Nuit à partir de <mark>28$</mark></span>
+					</a>
+					<a href="" id="card">
+						<span id="cadre">
+							<img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Logo">
+						</span>
+						<span class="cadreTitre">Auberge Le Panier</span>
+						<span class="cadreTitre">Nuit à partir de <mark>44$</mark></span>
+					</a>
+					<a href="" id="card">
+						<span id="cadre">
+							<img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Logo">
+						</span>
+						<span class="cadreTitre">Hôtel chez Amina</h4>
+						<span class="cadreTitre">Nuit à partir de <mark>72$</mark></span>
+					</a>
+				</ul>
+				<p>Afficher plus</p>
+			</section>
+			<section id="populaires">
+				<h2 id="GalleryTitles">Les plus populaires</h2>
+				<ul id="populaires">
+					<a href="" id="card">
 						<img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logo">
 						<h4>Auberge la Cannebière</h4>
 						<p>Nuit à partir de <mark>25$</mark></p>
-					</li>
-					<li id="ln1">
+					</a>
+					<a href="" id="card">
 						<img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Logo">
 						<h4>Hôtel du port</h4>
-						<p>Nuit à partir de <mark>35$</mark></p>
-					</li>
-					<li id="ln1">
-						<img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Logo">
-						<h4>Hôtel Les mouettes</h4>
-						<p>Nuit à partir de <mark>40$</mark></p>
-					</li>
-					<li id="ln2">
-						<img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Logo">
-						<h4>Hôtel de la mer</h4>
-						<p>Nuit à partir de <mark>28$</mark></p>
-					</li>
-					<li id="ln2">
-						<img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Logo">
-						<h4>Auberge Le Panier</h4>
-						<p>Nuit à partir de <mark>44$</mark></p>
-					</li>
-					<li id="ln2">
-						<img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Logo">
-						<h4>Hôtel chez Amina</h4>
-						<p>Nuit à partir de <mark>72$</mark></p>
-					</li>
-				</ul>
-				<p>Afficher plus</p>
-			</div>
-			<aside id="populaires">
-				<h2 id="GalleryTitles">Les plus populaires</h2>
-				<ul id="populaires">
-					<li><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logo">
-						<h4>Auberge la Cannebière</h4>
 						<p>Nuit à partir de <mark>25$</mark></p>
-					</li>
-					<li>
-						<img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Logo">
-						<h4>Hôtel du port</h4><p>Nuit à partir de <mark>25$</mark></p>
-					</li>
-					<li>
+					</a>
+					<a href="" id="card">
 						<img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Logo">
 						<h4>Hôtel Les mouettes</h4>
 						<p>Nuit à partir de <mark>25$</mark></p>
-					</li>
+					</a>
 				</ul>
-			</aside>
-		</section>
+			</section>
+		</div>
 		
 		<section>
 			<div id="HostingActivity">
@@ -152,3 +183,5 @@
 		
     </body>
 </html>
+
+
