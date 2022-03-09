@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
 		<link rel="stylesheet" href="style.css" />
         <title>Reservia</title>
+		<script src="https://kit.fontawesome.com/3eb3de2a7e.js" crossorigin="anonymous"></script>
     </head>
 	
     <body>
@@ -26,6 +27,7 @@
 			<p>En plein centre ville ou en pleine nature</p>
 			
 			<form id="SearchInput">
+				<div></div>
 				<input type="text" id="SearchTextInput" name="name" required minlength="4" maxlength="8" size="10">
 				<button id="SearchButton">Rechercher</button>
 			</form>
@@ -34,19 +36,27 @@
 				<h5>Filtres</h5>
 				<ul id="Filters">
 					<li class="FilterButton">
-						<div></div>
+						<div>
+							<i class="fa-solid fa-money-bill-1-wave fa-lg"></i>
+						</div>
 						<a>Économiques</a>
 					</li>
 					<li class="FilterButton">
-						<div></div>
+						<div>
+							<i class="fa-solid fa-child fa-lg"></i>
+						</div>
 						<a>Familial</a>
 					</li>
 					<li class="FilterButton">
-						<div></div>
+						<div>
+							<i class="fa-solid fa-heart fa-lg"></i>
+						</div>
 						<a>Romantique</a>
 					</li>
 					<li class="FilterButton">
-						<div></div>
+						<div>
+							<i class="fa-solid fa-dog fa-lg"></i>
+						</div>
 						<a>Animaux autorisés</a>
 					</li>
 				</ul>
@@ -61,104 +71,120 @@
 			<section id="marseille">
 				<h2 id="GalleryTitles">Hébergements à Marseille</h2>
 				<ul>
-					<a href="" id="card">
-						<span id="cadre">
+					<a href="" class="card">
+						<span class="cadre">
 							<img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logo">
 						</span>
 						<span class="cadreTitre">Auberge la Cannebière</span>
 						<span class="cadrePrix">Nuit à partir de <mark>25$</mark></span>
 					</a>
-					<a href="" id="card">
-						<span id="cadre">
+					<a href="" class="card">
+						<span class="cadre">
 							<img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Logo">
 						</span>
 						<span class="cadreTitre">Hôtel du port</span>
-						<span class="cadreTitre">Nuit à partir de <mark>35$</mark></span>
+						<span class="cadrePrix">Nuit à partir de <mark>35$</mark></span>
 					</li>
-					<a href="" id="card">
-						<span id="cadre">
+					<a href="" class="card">
+						<span class="cadre">
 							<img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Logo">
 						</span>
 						<span class="cadreTitre">Hôtel Les mouettes</span>
-						<span class="cadreTitre">Nuit à partir de <mark>40$</mark></span>
+						<span class="cadrePrix">Nuit à partir de <mark>40$</mark></span>
 					</a>
-					<a href="" id="card">
-						<span id="cadre">
+					<a href="" class="card">
+						<span class="cadre">
 							<img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Logo">
 						</span>
 						<span class="cadreTitre">Hôtel de la mer</span>
-						<span class="cadreTitre">Nuit à partir de <mark>28$</mark></span>
+						<span class="cadrePrix">Nuit à partir de <mark>28$</mark></span>
 					</a>
-					<a href="" id="card">
-						<span id="cadre">
+					<a href="" class="card">
+						<span class="cadre">
 							<img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Logo">
 						</span>
 						<span class="cadreTitre">Auberge Le Panier</span>
-						<span class="cadreTitre">Nuit à partir de <mark>44$</mark></span>
+						<span class="cadrePrix">Nuit à partir de <mark>44$</mark></span>
 					</a>
-					<a href="" id="card">
-						<span id="cadre">
+					<a href="" class="card">
+						<span class="cadre">
 							<img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Logo">
 						</span>
 						<span class="cadreTitre">Hôtel chez Amina</h4>
-						<span class="cadreTitre">Nuit à partir de <mark>72$</mark></span>
+						<span class="cadrePrix">Nuit à partir de <mark>72$</mark></span>
 					</a>
 				</ul>
 				<p>Afficher plus</p>
 			</section>
 			<section id="populaires">
 				<h2 id="GalleryTitles">Les plus populaires</h2>
-				<ul id="populaires">
+				<ul>
 					<a href="" id="card">
-						<img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logo">
-						<h4>Auberge la Cannebière</h4>
-						<p>Nuit à partir de <mark>25$</mark></p>
+						<span id="cadre">
+							<img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logo">
+							<h4>Auberge la Cannebière</h4>
+							<p>Nuit à partir de <mark>25$</mark></p>
+						</span>
 					</a>
 					<a href="" id="card">
-						<img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Logo">
-						<h4>Hôtel du port</h4>
-						<p>Nuit à partir de <mark>25$</mark></p>
+						<span id="cadre">
+							<img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Logo">
+							<h4>Hôtel du port</h4>
+							<p>Nuit à partir de <mark>25$</mark></p>
+						</span>
 					</a>
 					<a href="" id="card">
-						<img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Logo">
-						<h4>Hôtel Les mouettes</h4>
-						<p>Nuit à partir de <mark>25$</mark></p>
+						<span id="cadre">
+							<img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Logo">
+							<h4>Hôtel Les mouettes</h4>
+							<p>Nuit à partir de <mark>25$</mark></p>
+						</span>
 					</a>
 				</ul>
 			</section>
 		</div>
 		
-		<section>
-			<div id="HostingActivity">
-				<h2 id="GalleryTitles">Activités à Marseille</h2>
-				<ul id="activity">
-					<li>
+		<h2 id="GalleryTitles">Activités à Marseille</h2>
+
+		<div id="HostingActivity">
+			<ul id="activity">
+				<a href="" class="Cadre1">
+					<span id="cadre">
 						<img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Logo">
 						<h4>Vieux Port</h4>
-					</li>
-					<li>
+					</span>
+				</li>
+				<li>
+					<span id="cadre">
 						<img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Logo">
 						<h4>Fort de Pomègues</h4>
-					</li>
-					<li>
+					</span>
+				</li>
+				<li>
+					<span id="cadre"></span>
 						<img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Logo">
 						<h4>Îles du Frioul</h4>
-					</li>
-					<li>
+				</li>
+				<li>
+					<span id="cadre">
 						<img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Logo">
 						<h4>Parc National des Calanques</h4>
-					</li>
-					<li>
+					</span>
+				</li>
+				<li>
+					<span id="cadre">
 						<img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Logo">
 						<h4>Notre-Dame-de-la-Garde</h4>
-					</li>
-					<li>
+					</span>
+				</li>
+				<li>
+					<span id="cadre">
 						<img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Logo">
 						<h4>Parc Longchamp</h4>
-					</li>
-				</ul>
-			</div>
-		</section>
+					</span>
+				</li>
+			</ul>
+		</div>
 		
 		<footer>			
 			<ul>

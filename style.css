@@ -38,6 +38,42 @@ header a {
 
 
 
+
+/*Search*/
+#SearchInput {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+}
+
+#SearchInput div {
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#SearchInput input {
+    width: 150px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#SearchInput button {
+    width: 100px;
+    background-color: dodgerblue;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 0px;
+}
+
+
+
+
 /*Filter + Search Section*/
 #FilterSection {
     width: fit-content;
@@ -46,6 +82,7 @@ header a {
 }
 
 #FilterSection h5 {
+    padding-top: 35px;
     height: 100%;
     display: inline;
 }
@@ -54,81 +91,133 @@ header a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
     list-style-type: none;
     width: fit-content;
 }
 
 .FilterButton {
-    margin-left: 25px;
     margin: 15px;
     border-radius: 50px;
-    border: 2px solid silver;
+    border: 2px solid rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: flex-start;
 }
 
 .FilterButton a {
     padding: 15px;
+    font-weight: bold;
 }
 
 .FilterButton div {
-    width: 50px;
+    width: 51px;
     height: 50px;
     background-color: aliceblue;
     border-radius: 50px;
+    color: dodgerblue;    
+    padding-top: 15px;
+    padding-left: 15px;
 }
 
 
-
-
-/*Hébergements Marseille*/
-#hebergements {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#marseille {
-    width: 70%;
-    height: fit-content;
-}
-
-
-#marseille ul {
-    width: fit-content;
-    display: flex;
-    flex-wrap: wrap;
-    height: fit-content;
-}
-
-
-#card {
-    width: 200px;
-    height: fit-content;
+/* Paramètres globaux images */
+#hebergements .card {
+    width: 30%;
     padding: 5px;
     margin: 15px;
     box-shadow: 0px 0px 5px 5px silver;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    background-color: white;
+}
+
+#hebergements {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hebergements .cadre {
+    display: block;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 100px;
+    width: 100%;
+}
+
+.cadre img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
-#cadre img {
+
+/*Hébergements Marseille*/
+#GalleryTitles {
+    padding-bottom: 10px;
+}
+
+#marseille {
+    width: 70%;
+    padding: 15px;
     border-radius: 15px;
+    margin-right: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#marseille ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+
+/*Hébergements Populaires*/
+#populaires {
+    width: 30%;
+    padding: 15px;
+    border-radius: 15px;
+    margin-right: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#populaires ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+#populaires ul a {
+    width: 100%;
+    height: fit-content;
+}
+
+#populaires #cadre img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     width: 100%;
     height: 100px;
 }
 
 
-/*Hébergements Populaires*/
-#hebergements #populaires {
-    width: 30%;
-    background-color: gray;
+
+
+
+/* Activités à Marseille */
+#HostingActivity {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
+#HostingActivity a {
 
+}
 
 
 
