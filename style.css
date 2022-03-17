@@ -29,7 +29,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a:link{
+    text-decoration: none!important;
+}
+a:visited {
+    color: black;
+}
 
 
 
@@ -39,25 +44,32 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 25px;
 }
 
 #SiteLogo {
+    padding: 40px;
     width: 100px;
     height: 50px;
 }
 
 #Navigation {
-    height: 75px;
+    height: 120px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 header a {
-    padding: 15px;
+    padding: 25px;
+    padding-top: 40px;
     font-family: "Raleway-Regular";
     text-decoration: none;
+    height: 100px;
+}
+
+#Navigation a:hover {
+    color: dodgerblue;
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 
@@ -104,6 +116,7 @@ header a {
 
 #SearchInput {
     margin-top: 10px;
+    margin-bottom: 5px;
     display: flex;
     flex-direction: row;
     height: 40px;
@@ -152,6 +165,14 @@ header a {
     font-family: "Raleway-Bold";
 }
 
+#FilterSection a:hover {
+    color: dodgerblue;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+
 #FilterSection h5 {
     padding-top: 35px;
     height: 100%;
@@ -198,7 +219,7 @@ header a {
 
 /* Global Images Settings */
 .card {
-    padding: 5px;
+    padding: 6px;
     margin: 15px;
     box-shadow: 0px 0px 20px 5px silver;
     border-radius: 20px;
@@ -252,23 +273,29 @@ header a {
 }
 
 .HostName {
-    padding: 5px;
+    padding: 10px;
     font-family: "Raleway-Bold";
     text-decoration: none;
     color: black;
     background-color: transparent;
+    font-size: 20px;
 }
 
 .NightPrice {
     text-decoration: none;
     color: black;
     font-family: "Raleway-Regular";
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
 mark {
     font-weight: bold;
     background: none;
+}
+
+.RatingImg {
+    height: 25px;
+    margin: 5px;
 }
 
 
@@ -299,6 +326,15 @@ mark {
 /* Hébergements Populaires */
 #populaires .card {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#populaires .card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
 }
 
 #populaires {
@@ -307,6 +343,12 @@ mark {
     border-radius: 15px;
     margin-right: 15px;
     background-color: rgba(0, 0, 0, 0.05);
+}
+
+#populaires .Photo {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+    width: 40%;
 }
 
 
@@ -327,8 +369,7 @@ mark {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin: 15px;
-    margin: 50px;
+    padding: 30px;
     align-items: stretch;
     padding-bottom: 50px;
 }
@@ -341,7 +382,7 @@ mark {
 #HostingActivity .card {
     width: 20%;
     padding: 0px;
-    margin: 15px;
+    margin: 30px;
     height: 100%;
 }
 
