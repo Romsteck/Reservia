@@ -119,7 +119,7 @@ header a {
     margin-bottom: 5px;
     display: flex;
     flex-direction: row;
-    height: 40px;
+    height: 50px;
 }
 
 #SearchInput div {
@@ -226,6 +226,7 @@ header a {
     display: flex;
     flex-direction: column;
     background-color: white;
+    overflow: hidden;
 }
 
 .Photo {
@@ -307,8 +308,6 @@ mark {
     width: 70%;
     padding: 25px;
     border-radius: 15px;
-    margin-right: 15px;
-    margin-left: 15px;
     background-color: rgba(0, 0, 0, 0.05);
 }
 
@@ -324,6 +323,13 @@ mark {
 
 
 /* Hébergements Populaires */
+#populaires {
+    width: 25%;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
 #populaires .card {
     width: 100%;
     display: flex;
@@ -335,14 +341,6 @@ mark {
     flex-direction: column;
     justify-content: space-between;
     padding: 15px;
-}
-
-#populaires {
-    width: 30%;
-    padding: 15px;
-    border-radius: 15px;
-    margin-right: 15px;
-    background-color: rgba(0, 0, 0, 0.05);
 }
 
 #populaires .Photo {
@@ -365,25 +363,32 @@ mark {
 }
 
 #HostingActivity {
-    height: 400px;
     display: flex;
     flex-direction: row;
     width: 100%;
     padding: 30px;
     align-items: stretch;
-    padding-bottom: 50px;
-}
-
-#HostingActivity .Photo {
-    height: 100%;
-    border-radius: 15px;
 }
 
 #HostingActivity .card {
     width: 20%;
     padding: 0px;
-    margin: 30px;
-    height: 100%;
+    height: 400px;
+    position: relative;
+}
+
+#HostingActivity .HostName {
+    position: absolute;
+    bottom:0;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+}
+
+#HostingActivity .Photo {
+    height: 400px;
 }
 
 #HostingActivity div {
@@ -393,11 +398,12 @@ mark {
     margin-right: 25px;
 }
 
-#HostingActivity div .card {
+#HostingActivity .SubCard .card {
     width: 100%;
     height: 50%;
     margin: 15px;
 }
+
 
 
 /* Footer */
