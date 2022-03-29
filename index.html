@@ -15,9 +15,9 @@
 
 			<nav>
 				<ul id="Navigation">
-					<a href="" class="Navigation">Hébergements</a>
+					<a href="" class="Button1">Hébergements</a>
 					<a href="">Activités</a>
-					<a href="">S'inscrire</a>
+					<a href="" class="Button3">S'inscrire</a>
 				</ul>
 			</nav>
 		</header>
@@ -29,9 +29,9 @@
 			
 			<form id="SearchInput">
 				<div>
-					<i class="fa-solid fa-location-dot fa-sm"></i>
+					<i class="fa-solid fa-location-dot fa-lg"></i>
 				</div>
-				<input type="text" id="SearchTextInput" name="name" required minlength="4" maxlength="8" size="10">
+				<input type="text" id="SearchTextInput" name="name" required minlength="4" maxlength="8" size="10" value="Marseille, France">
 				<button id="SearchButton">
 					Rechercher
 				</button>
@@ -87,7 +87,7 @@
 						<span class="HostName">Auberge la Cannebière</span>
 						<span class="NightPrice">Nuit à partir de <mark>25$</mark></span>
 						<span class="RatingImg">
-							<img src="images/Rating.png" alt="Rating">
+							<img src="images/Ratings/PNG/Rating 4x.png" alt="Rating">
 						</span>
 					</a>
 					<a href="" class="card">
@@ -97,7 +97,7 @@
 						<span class="HostName">Hôtel du port</span>
 						<span class="NightPrice">Nuit à partir de <mark>35$</mark></span>
 						<span class="RatingImg">
-							<img src="images/Rating.png" alt="Rating">
+							<img src="images/Ratings/PNG/Rating 5x.png" alt="Rating">
 						</span>
 					</li>
 					<a href="" class="card">
@@ -107,7 +107,7 @@
 						<span class="HostName">Hôtel Les mouettes</span>
 						<span class="NightPrice">Nuit à partir de <mark>40$</mark></span>
 						<span class="RatingImg">
-							<img src="images/Rating.png" alt="Rating">
+							<img src="images/Ratings/PNG/Rating 4x.png" alt="Rating">
 						</span>
 					</a>
 					<a href="" class="card">
@@ -117,7 +117,7 @@
 						<span class="HostName">Hôtel de la mer</span>
 						<span class="NightPrice">Nuit à partir de <mark>28$</mark></span>
 						<span class="RatingImg">
-							<img src="images/Rating.png" alt="Rating">
+							<img src="images/Ratings/PNG/Rating 3x.png" alt="Rating">
 						</span>
 					</a>
 					<a href="" class="card">
@@ -127,7 +127,7 @@
 						<span class="HostName">Auberge Le Panier</span>
 						<span class="NightPrice">Nuit à partir de <mark>44$</mark></span>
 						<span class="RatingImg">
-							<img src="images/Rating.png" alt="Rating">
+							<img src="images/Ratings/PNG/Rating 4x.png" alt="Rating">
 						</span>
 					</a>
 					<a href="" class="card">
@@ -137,27 +137,30 @@
 						<span class="HostName">Hôtel chez Amina</span>
 						<span class="NightPrice">Nuit à partir de <mark>72$</mark></span>
 						<span class="RatingImg">
-							<img src="images/Rating.png" alt="Rating">
+							<img src="images/Ratings/PNG/Rating 5x.png" alt="Rating">
 						</span>
 					</a>
 				</ul>
 				<p id="ShowMore">Afficher plus</p>
 			</section>
 			<section id="populaires">
-				<h2 id="GalleryTitles">Les plus populaires</h2>
+				<span id="PopulairesHeader">
+					<h2 id="GalleryTitles">Les plus populaires</h2>
+					<i class="fa-solid fa-arrow-trend-up fa-lg"></i>
+				</span>
 				<ul>
 					<a href="" class="card">
 						<span class="Photo">
 							<img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logo">
 						</span>
 						<div>
-							<span class="HostName">Auberge la Cannebière</span>
+							<span class="HostName">Hôtel Le soleil du matin</span>
 							<span class="NightPrice">
 								Nuit à partir de
 								<mark>25$</mark>
 							</span>
 							<span class="RatingImg">
-								<img src="images/Rating.png" alt="Rating">
+								<img src="images/Ratings/PNG/Rating 5x.png" alt="Rating">
 							</span>
 						</div>
 					</a>
@@ -166,13 +169,13 @@
 							<img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Logo">
 						</span>
 						<div>
-							<span class="HostName">Hôtel du port</span>
+							<span class="HostName">Au coeur de l'eau Chambres d'hôtes</span>
 							<span class="NightPrice">
 								Nuit à partir de
 								<mark>25$</mark>
 							</span>
 							<span class="RatingImg">
-								<img src="images/Rating.png" alt="Rating">
+								<img src="images/Ratings/PNG/Rating 4x.png" alt="Rating">
 							</span>
 						</div>
 					</a>
@@ -181,13 +184,13 @@
 							<img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Logo">
 						</span>
 						<div>
-							<span class="HostName">Hôtel Les mouettes</span>
+							<span class="HostName">Hôtel Tout bleu et Blanc</span>
 							<span class="NightPrice">
 								Nuit à partir de
 								<mark>25$</mark>
 							</span>
 							<span class="RatingImg">
-								<img src="images/Rating.png" alt="Rating">
+								<img src="images/Ratings/PNG/Rating 4x.png" alt="Rating">
 							</span>
 						</div>
 					</a>
@@ -196,7 +199,6 @@
 		</div>
 
 		<h2 id="HostingActivityTitle">Activités à Marseille</h2>
-
 		<div id="HostingActivity">
 			<a href="" class="card">
 				<span class="HostName">Vieux Port</span>
@@ -224,7 +226,7 @@
 					<img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Logo">
 				</span>
 			</a>
-			<div>
+			<div class="SubCard">
 				<a href="" class="card">
 					<span class="Photo">
 						<span class="HostName">Notre-Dame-de-la-Garde</span>

@@ -67,9 +67,18 @@ header a {
     height: 100px;
 }
 
+header .Button1 {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+header .Button3 {
+    color: #0065FC;
+    font-weight: bold;
+}
+
 #Navigation a:hover {
-    color: dodgerblue;
-    background-color: rgba(0, 0, 0, 0.05);
+    color: #0065FC;
 }
 
 
@@ -94,8 +103,8 @@ header a {
 
 #SearchSection #CountAvailableHostings {
     display: flex;
-    padding-bottom: 20px;
-    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 #SearchSection #CountAvailableHostings span {
@@ -105,7 +114,7 @@ header a {
     border-radius: 25px;
     padding-left: 9px;
     padding-top: 3px;
-    color: dodgerblue;
+    color: #0065FC;
 }
 
 #SearchSection #CountAvailableHostings h4 {
@@ -115,36 +124,46 @@ header a {
 }
 
 #SearchInput {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     height: 50px;
 }
 
 #SearchInput div {
-    width: 40px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    width: 55px;
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     padding-left: 15px;
     padding-top: 10px;
 }
 
+#SearchInput i {
+    padding-top: 15px;
+    padding-left:5px;
+}
+
 #SearchInput input {
-    width: 150px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: 'Raleway-Bold';
+    font-size: 18px;
+    padding: 15px;
+    width: 200px;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
     border-left: 0px;
     border-right: 0px;
 }
 
 #SearchInput button {
-    width: 100px;
-    background-color: dodgerblue;
+    font-size: 16px;
+    width: 120px;
+    background-color: #0065FC;
     color: white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    font-family: 'Raleway-Medium';
     border: 0px;
 }
 
@@ -166,7 +185,7 @@ header a {
 }
 
 #FilterSection a:hover {
-    color: dodgerblue;
+    color: #0065FC;
     background-color: rgba(0, 0, 0, 0.05);
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -192,22 +211,24 @@ header a {
 .FilterButton {
     margin: 15px;
     border-radius: 50px;
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid #D9D9D9;
     display: flex;
     justify-content: flex-start;
 }
 
 .FilterButton a {
-    padding: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 15px;
     font-weight: bold;
 }
 
 .FilterButton div {
     width: 51px;
     height: 50px;
-    background-color: aliceblue;
+    background-color: #DEEBFF;
     border-radius: 50px;
-    color: dodgerblue;    
+    color: #0065FC;    
     padding-top: 15px;
     padding-left: 15px;
 }
@@ -221,7 +242,7 @@ header a {
 .card {
     padding: 6px;
     margin: 15px;
-    box-shadow: 0px 0px 20px 5px silver;
+    box-shadow: 0px 0px 20px 5px #D9D9D9;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -238,8 +259,9 @@ header a {
 
 #hebergements {
     display: flex;
-    justify-content: space-between;
-    padding-left: 25px;
+    justify-content: space-around;
+    padding: 20px;
+    height: 750px;
 }
 
 #hebergements h2 {
@@ -295,8 +317,14 @@ mark {
 }
 
 .RatingImg {
-    height: 25px;
-    margin: 5px;
+    display: flex;
+}
+
+.RatingImg img {
+    width: 120px;
+    height: 40px;
+    padding-left: 5px;
+    object-fit: contain;
 }
 
 
@@ -305,10 +333,14 @@ mark {
 
 /* Hébergements Marseille */
 #marseille {
-    width: 70%;
+    width: 65%;
     padding: 25px;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.05);
+}
+
+#marseille .card {
+    height: 250px;
 }
 
 #marseille ul {
@@ -317,6 +349,8 @@ mark {
 
 #marseille #ShowMore {
     padding: 20px;
+    font-family: 'Raleway-Bold';
+    font-size: 20px;
 }
 
 
@@ -324,31 +358,49 @@ mark {
 
 /* Hébergements Populaires */
 #populaires {
-    width: 25%;
+    width: 30%;
     padding: 15px;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.05);
+}
+
+#populaires #PopulairesHeader {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+#populaires #PopulairesHeader i {
+    padding-top: 25px;
+    padding-right: 20px;
 }
 
 #populaires .card {
     width: 100%;
     display: flex;
     flex-direction: row;
+    height: 175px;
 }
 
 #populaires .card div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 15px;
+    width: 60%;
 }
 
 #populaires .Photo {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 15px;
     width: 40%;
+    height: 100%;
 }
 
+#populaires .NightPrice {
+    margin-bottom: 15px;
+}
 
 
 
@@ -365,16 +417,16 @@ mark {
 #HostingActivity {
     display: flex;
     flex-direction: row;
-    width: 100%;
     padding: 30px;
     align-items: stretch;
+    height: 600px;
 }
 
 #HostingActivity .card {
-    width: 20%;
+    width: 25%;
     padding: 0px;
-    height: 400px;
     position: relative;
+    margin: 25px;
 }
 
 #HostingActivity .HostName {
@@ -383,25 +435,25 @@ mark {
     z-index: 2;
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     background-color: white;
 }
 
 #HostingActivity .Photo {
-    height: 400px;
+    height: 100%;
 }
 
 #HostingActivity div {
     display: flex;
     flex-direction: column;
-    width: 20%;
-    margin-right: 25px;
+    width: 25%;
+    margin-right: 50px;
 }
 
 #HostingActivity .SubCard .card {
     width: 100%;
     height: 50%;
-    margin: 15px;
+    margin: 25px;
 }
 
 
