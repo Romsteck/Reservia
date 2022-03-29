@@ -120,12 +120,12 @@ header .Button3 {
 #SearchSection #CountAvailableHostings h4 {
     padding-left: 10px;
     padding-top: 3px;
-    font-family: "Raleway-Regular";
+    font-family: "Raleway-Light";
 }
 
 #SearchInput {
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     height: 50px;
@@ -178,6 +178,8 @@ header .Button3 {
     display: flex;
     flex-direction: row;
     padding-left: 5px;
+    height: 50px;
+    margin-bottom: 30px;
 }
 
 #FilterSection a {
@@ -187,8 +189,6 @@ header .Button3 {
 #FilterSection a:hover {
     color: #0065FC;
     background-color: rgba(0, 0, 0, 0.05);
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
 }
 
 
@@ -210,27 +210,32 @@ header .Button3 {
 
 .FilterButton {
     margin: 15px;
-    border-radius: 50px;
-    border: 2px solid #D9D9D9;
     display: flex;
     justify-content: flex-start;
+    height: 100%;
+    position: relative;
 }
 
 .FilterButton a {
     padding-top: 15px;
-    padding-left: 10px;
+    padding-left: 60px;
     padding-right: 15px;
     font-weight: bold;
+    border-radius: 50px;
+    border: 2px solid #D9D9D9;
 }
 
 .FilterButton div {
-    width: 51px;
+    width: 50px;
     height: 50px;
     background-color: #DEEBFF;
     border-radius: 50px;
     color: #0065FC;    
     padding-top: 15px;
     padding-left: 15px;
+    position: absolute;
+    display: block;
+    z-index: 0;
 }
 
 
@@ -261,7 +266,7 @@ header .Button3 {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    height: 750px;
+    height: 765px;
 }
 
 #hebergements h2 {
@@ -420,6 +425,7 @@ mark {
     padding: 30px;
     align-items: stretch;
     height: 600px;
+    margin-bottom: 25px;
 }
 
 #HostingActivity .card {
@@ -435,7 +441,7 @@ mark {
     z-index: 2;
     display: block;
     width: 100%;
-    padding: 15px;
+    padding: 20px;
     background-color: white;
 }
 
@@ -466,6 +472,7 @@ footer {
     justify-content: flex-start;
     flex-direction: row;
     background-color: rgba(0, 0, 0, 0.08);
+    padding-top: 25px
 }
 
 footer ul {
