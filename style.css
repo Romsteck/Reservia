@@ -176,14 +176,15 @@ header .Button3 {
 #FilterSection {
     width: fit-content;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     padding-left: 5px;
-    height: 50px;
     margin-bottom: 30px;
 }
 
 #FilterSection a {
     font-family: "Raleway-Bold";
+    height: 50px;
 }
 
 #FilterSection a:hover {
@@ -193,14 +194,13 @@ header .Button3 {
 
 
 #FilterSection h5 {
-    padding-top: 35px;
-    height: 100%;
+    padding-top: 30px;
     display: inline;
     font-family: "Raleway-Bold";
     font-size: 100%;
 }
 
-#Filters {
+#FilterList {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -212,13 +212,12 @@ header .Button3 {
     margin: 15px;
     display: flex;
     justify-content: flex-start;
-    height: 100%;
     position: relative;
+    text-align: center;
 }
 
 .FilterButton a {
-    padding-top: 15px;
-    padding-left: 60px;
+    margin-left: 60px;
     padding-right: 15px;
     font-weight: bold;
     border-radius: 50px;
@@ -232,7 +231,6 @@ header .Button3 {
     border-radius: 50px;
     color: #0065FC;    
     padding-top: 15px;
-    padding-left: 15px;
     position: absolute;
     display: block;
     z-index: 0;
@@ -266,7 +264,6 @@ header .Button3 {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    height: 765px;
 }
 
 #hebergements h2 {
@@ -278,10 +275,6 @@ header .Button3 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-}
-
-#hebergements .card {
-    width: 30%;
 }
 
 #hebergements .Photo {
@@ -338,14 +331,20 @@ mark {
 
 /* Hébergements Marseille */
 #marseille {
-    width: 65%;
+    width: 60%;
     padding: 25px;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.05);
 }
 
+#marseille #Lines {
+    display: flex;
+    flex-wrap: none;
+}
+
 #marseille .card {
     height: 250px;
+    width: 30%;
 }
 
 #marseille ul {
@@ -495,4 +494,20 @@ footer h4 {
     padding: 5px;
     padding-bottom: 15px;
     font-size: 18px;
+}
+
+
+
+/*---------- MEDIA QUERIES ---------*/
+
+@media screen and (min-width: 1000px) {
+
+    #populaires {
+        width: 100%;
+    }
+
+    #marseille {
+        width: 100%;
+    }
+
 }
