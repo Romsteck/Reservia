@@ -120,12 +120,12 @@ header .Button3 {
 #SearchSection #CountAvailableHostings h4 {
     padding-left: 10px;
     padding-top: 3px;
-    font-family: "Raleway-Regular";
+    font-family: "Raleway-Light";
 }
 
 #SearchInput {
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     height: 50px;
@@ -172,35 +172,24 @@ header .Button3 {
 
 
 
-/* Filter */
+/* Filters */
 #FilterSection {
     width: fit-content;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     padding-left: 5px;
+    margin-bottom: 30px;
 }
-
-#FilterSection a {
-    font-family: "Raleway-Bold";
-}
-
-#FilterSection a:hover {
-    color: #0065FC;
-    background-color: rgba(0, 0, 0, 0.05);
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-
 
 #FilterSection h5 {
-    padding-top: 35px;
-    height: 100%;
+    padding-top: 30px;
     display: inline;
     font-family: "Raleway-Bold";
     font-size: 100%;
 }
 
-#Filters {
+#FilterSection ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -210,27 +199,38 @@ header .Button3 {
 
 .FilterButton {
     margin: 15px;
-    border-radius: 50px;
-    border: 2px solid #D9D9D9;
     display: flex;
     justify-content: flex-start;
+    position: relative;
+    text-align: center;
 }
 
-.FilterButton a {
-    padding-top: 15px;
-    padding-left: 10px;
-    padding-right: 15px;
-    font-weight: bold;
-}
-
-.FilterButton div {
-    width: 51px;
+.FilterButton i {
+    width: 50px;
     height: 50px;
     background-color: #DEEBFF;
     border-radius: 50px;
     color: #0065FC;    
-    padding-top: 15px;
-    padding-left: 15px;
+    padding-top: 24px;
+    position: absolute;
+    display: block;
+    z-index: 0;
+}
+
+.FilterButton a {
+    font-family: "Raleway-Bold";
+    height: 50px;
+    padding-right: 15px;
+    padding-left: 55px;
+    padding-top: 13px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 2px solid #D9D9D9;
+}
+
+.FilterButton a:hover {
+    color: #0065FC;
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 
@@ -250,18 +250,10 @@ header .Button3 {
     overflow: hidden;
 }
 
-.Photo {
-    display: block;
-    overflow: hidden;
-    height: 200px;
-    width: 100%;
-}
-
 #hebergements {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    height: 750px;
 }
 
 #hebergements h2 {
@@ -275,13 +267,13 @@ header .Button3 {
     flex-wrap: wrap;
 }
 
-#hebergements .card {
-    width: 30%;
-}
-
 #hebergements .Photo {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    display: block;
+    overflow: hidden;
+    height: 200px;
+    width: 100%;
 }
 
 .Photo img {
@@ -333,14 +325,20 @@ mark {
 
 /* Hébergements Marseille */
 #marseille {
-    width: 65%;
+    width: 60%;
     padding: 25px;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.05);
 }
 
+#marseille #Lines {
+    display: flex;
+    flex-wrap: none;
+}
+
 #marseille .card {
     height: 250px;
+    width: 30%;
 }
 
 #marseille ul {
@@ -420,6 +418,7 @@ mark {
     padding: 30px;
     align-items: stretch;
     height: 600px;
+    margin-bottom: 25px;
 }
 
 #HostingActivity .card {
@@ -435,7 +434,7 @@ mark {
     z-index: 2;
     display: block;
     width: 100%;
-    padding: 15px;
+    padding: 20px;
     background-color: white;
 }
 
@@ -466,6 +465,7 @@ footer {
     justify-content: flex-start;
     flex-direction: row;
     background-color: rgba(0, 0, 0, 0.08);
+    padding-top: 25px
 }
 
 footer ul {
@@ -489,3 +489,20 @@ footer h4 {
     padding-bottom: 15px;
     font-size: 18px;
 }
+
+
+
+/*---------- MEDIA QUERIES ---------*/
+/*
+@media screen and (min-width: 1000px) {
+
+    #populaires {
+        width: 100%;
+    }
+
+    #marseille {
+        width: 100%;
+    }
+
+}
+*/
