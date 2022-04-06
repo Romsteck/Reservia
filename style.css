@@ -331,18 +331,18 @@ mark {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
+#marseille ul {
+    justify-content: space-between;
+}
+
 #marseille #Lines {
     display: flex;
-    flex-wrap: none;
+    width: 100%;
 }
 
 #marseille .card {
     height: 250px;
     width: 30%;
-}
-
-#marseille ul {
-    justify-content: space-between;
 }
 
 #marseille #ShowMore {
@@ -493,16 +493,31 @@ footer h4 {
 
 
 /*---------- MEDIA QUERIES ---------*/
-/*
-@media screen and (min-width: 1000px) {
 
-    #populaires {
-        width: 100%;
+@media screen and (max-width: 1000px) {
+
+    #hebergements {
+        flex-wrap: wrap;
+        padding: 0px;
+        flex-direction: column-reverse;
     }
 
     #marseille {
+        background-color: white;
         width: 100%;
     }
 
+    #marseille #Lines {
+        flex-wrap: wrap;
+    }
+
+    #marseille .card {
+        width: 100%;
+    }
+
+    #populaires {
+        width: 100%;
+        border-radius: 0px;
+    }
+
 }
-*/
