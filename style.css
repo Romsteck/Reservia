@@ -3,22 +3,18 @@
     font-family: "Raleway-Light";
     src : url("fonts/Raleway/Raleway-Light.ttf")
 }
-
 @font-face {
     font-family: "Raleway-Medium";
     src : url("fonts/Raleway/Raleway-Medium.ttf")
 }
-
 @font-face {
     font-family: "Raleway-Regular";
     src : url("fonts/Raleway/Raleway-Regular.ttf")
 }
-
 @font-face {
     font-family: "Raleway-Bold";
     src : url("fonts/Raleway/Raleway-Bold.ttf")
 }
-
 
 
 
@@ -40,38 +36,38 @@ a:visited {
 
 
 /* Header */
-#SiteLogo {
-    padding: 40px;
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#SiteLogo img {
+    margin: 40px;
     width: 100px;
     height: 50px;
-    order: 0;
 }
 
 #Navigation {
-    height: 120px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
-header a {
-    padding: 25px;
-    padding-top: 40px;
+#Navigation a {
+    padding: 30px;
+    padding-top: 50px;
     font-family: "Raleway-Regular";
     text-decoration: none;
     height: 100px;
 }
-
-header .Button1 {
+#Navigation .Button1 {
     border-top: 2px solid #0065FC;
     color: #0065FC;
 }
-
-header .Button3 {
+#Navigation .Button3 {
     color: #0065FC;
     font-weight: bold;
 }
-
 #Navigation a:hover {
     color: #0065FC;
 }
@@ -85,11 +81,9 @@ header .Button3 {
 #SearchSection {
     padding-left: 40px;
 }
-
 #SearchSection h2 {
     font-family: "Raleway-Bold";
 }
-
 #SearchSection p {
     font-family: "Raleway-Medium";
     padding-top: 10px;
@@ -101,7 +95,6 @@ header .Button3 {
     padding-bottom: 15px;
     padding-top: 15px;
 }
-
 #SearchSection #CountAvailableHostings span {
     width: 25px;
     height: 25px;
@@ -111,7 +104,6 @@ header .Button3 {
     padding-top: 3px;
     color: #0065FC;
 }
-
 #SearchSection #CountAvailableHostings h4 {
     padding-left: 10px;
     padding-top: 3px;
@@ -125,7 +117,6 @@ header .Button3 {
     flex-direction: row;
     height: 50px;
 }
-
 #SearchInput div {
     width: 55px;
     background-color: #F2F2F2;
@@ -134,12 +125,10 @@ header .Button3 {
     padding-left: 15px;
     padding-top: 10px;
 }
-
 #SearchInput i {
     padding-top: 15px;
     padding-left:5px;
 }
-
 #SearchInput input {
     font-family: 'Raleway-Bold';
     font-size: 18px;
@@ -151,15 +140,20 @@ header .Button3 {
     border-right: 0px;
 }
 
-#SearchInput button {
-    font-size: 16px;
-    width: 120px;
+#SearchButton {
     background-color: #0065FC;
     color: white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    font-family: 'Raleway-Medium';
     border: 0px;
+}
+#SearchButton span {
+    font-size: 16px;
+    padding: 20px;
+    font-family: 'Raleway-Medium';
+}
+#SearchButton i {
+    display: none;
 }
 
 
@@ -176,14 +170,12 @@ header .Button3 {
     padding-left: 5px;
     margin-bottom: 30px;
 }
-
 #FilterSection h5 {
     padding-top: 30px;
     display: inline;
     font-family: "Raleway-Bold";
     font-size: 100%;
 }
-
 #FilterSection ul {
     display: flex;
     flex-wrap: wrap;
@@ -199,7 +191,6 @@ header .Button3 {
     position: relative;
     text-align: center;
 }
-
 .FilterButton i {
     width: 50px;
     height: 50px;
@@ -211,7 +202,6 @@ header .Button3 {
     display: block;
     z-index: 0;
 }
-
 .FilterButton a {
     font-family: "Raleway-Bold";
     height: 50px;
@@ -222,7 +212,6 @@ header .Button3 {
     border-radius: 50px;
     border: 2px solid #D9D9D9;
 }
-
 .FilterButton a:hover {
     color: #0065FC;
     background-color: rgba(0, 0, 0, 0.05);
@@ -250,18 +239,15 @@ header .Button3 {
     justify-content: space-around;
     padding: 20px;
 }
-
 #hebergements h2 {
     padding: 15px;
     font-family: "Raleway-Bold";
 }
-
 #hebergements ul {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-
 #hebergements .Photo {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -325,21 +311,17 @@ mark {
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.05);
 }
-
 #marseille ul {
     justify-content: space-between;
 }
-
 #marseille #Lines {
     display: flex;
     width: 100%;
 }
-
 #marseille .card {
     height: 250px;
     width: 30%;
 }
-
 #marseille #ShowMore {
     padding: 20px;
     font-family: 'Raleway-Bold';
@@ -356,26 +338,22 @@ mark {
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.05);
 }
-
 #populaires #PopulairesHeader {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     margin-top: 15px;
 }
-
 #populaires #PopulairesHeader i {
     padding-top: 25px;
     padding-right: 20px;
 }
-
 #populaires .card {
     width: 100%;
     display: flex;
     flex-direction: row;
     height: 175px;
 }
-
 #populaires .card div {
     display: flex;
     flex-direction: column;
@@ -383,14 +361,12 @@ mark {
     padding: 15px;
     width: 60%;
 }
-
 #populaires .Photo {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 15px;
     width: 40%;
     height: 100%;
 }
-
 #populaires .NightPrice {
     margin-bottom: 15px;
 }
@@ -415,14 +391,12 @@ mark {
     height: 600px;
     margin-bottom: 25px;
 }
-
 #HostingActivity .card {
     width: 25%;
     padding: 0px;
     position: relative;
     margin: 25px;
 }
-
 #HostingActivity .HostName {
     position: absolute;
     bottom:0;
@@ -432,18 +406,15 @@ mark {
     padding: 20px;
     background-color: white;
 }
-
 #HostingActivity .Photo {
     height: 100%;
 }
-
 #HostingActivity div {
     display: flex;
     flex-direction: column;
     width: 25%;
     margin-right: 50px;
 }
-
 #HostingActivity .SubCard .card {
     width: 100%;
     height: 300px;
@@ -463,7 +434,6 @@ footer {
     padding-bottom: 50px;
     padding-top: 25px
 }
-
 footer ul {
     display: flex;
     flex-direction: column;
@@ -471,14 +441,12 @@ footer ul {
     padding-left: 60px;
     padding-top: 25px;
 }
-
 footer ul a {
     font-family: "Raleway-Light";
     text-decoration: none;
     padding: 5px;
     color: black;
 }
-
 footer h4 {
     font-family: "Raleway-Bold";
     padding: 5px;
@@ -496,7 +464,74 @@ footer h4 {
 /* ------- MAX 576px ------ */
 @media screen and (max-width: 576px) {
 
-    /*Navigation:order*/
+    #SearchInput{
+        width: 100%;
+    }
+    #SearchTextInput {
+        width: 80%;
+    }
+    #SearchButton {
+        border-radius: 15px;
+    }
+    #SearchButton span {
+        display: none;
+    }
+    #SearchButton i {
+        display: inline-block;
+        width: 50px;
+        padding-bottom: 12px;
+        padding-right: 5px;
+    }
+    
+    #CountAvailableHostings {
+        margin-bottom: 30px;
+        padding-right: 20px
+    }
+
+    #FilterSection h5 {
+        padding-top: 5px;
+    }
+
+    #FilterSection ul {
+        margin-top: 15px;
+        position: relative;
+        left: -10px;
+    }
+
+    .FilterButton {
+        margin: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    #Navigation a {
+        height: 50px;
+        width: 50%;
+        text-align: center;
+    }
+
+    #Navigation .Button1 {
+        padding: 0px;
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        margin-bottom: 25px;
+    }
+
+    #Navigation .Button2 {
+        padding: 0px;
+        border-bottom: 2px solid silver;
+        margin-bottom: 25px;
+    }
+
+    #Navigation .Button3 {
+        width: 50px;
+        position: absolute;
+        top: 0px;
+        right: 80px;
+    }
 
     #hebergements {
         flex-wrap: wrap;
@@ -523,6 +558,8 @@ footer h4 {
         justify-content: space-between;
         height: auto;
         padding: 40px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
     }
 
     #HostingActivity .card {
@@ -538,15 +575,52 @@ footer h4 {
 
     #HostingActivity .SubCard {
         width: 100%;
-        height: 500px;
-        margin: 0px;
+        height: 600px;
+        padding: 0px;
         margin-bottom: 50px;
+    }
+
+    #HostingActivity .SubCard .card {
+        margin-left: 0px;
     }
 }
 
 /* ------- 576px-992px ------ */
 @media screen and (min-width: 576px) and (max-width: 992px) {
+    
+    header {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
 
+    #Navigation a {
+        height: 50px;
+        width: 33.3%;
+        text-align: center;
+    }
+
+    #Navigation .Button1 {
+        padding: 0px;
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        margin-bottom: 25px;
+    }
+
+    #Navigation .Button2 {
+        padding: 0px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        color: rgba(0, 0, 0, 0.1);
+        margin-bottom: 25px;
+    }
+
+    #Navigation .Button3 {
+        padding: 0px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        margin-bottom: 25px;
+        color: black;
+        font-weight: lighter;
+    }
+    
     #hebergements {
         flex-wrap: wrap;
         padding: 0px;
@@ -619,7 +693,6 @@ footer h4 {
         height: 240px;
     }
 }
-
 
 /* ------- 1200px-1650px ------ */
 @media screen and (min-width: 1200px) and (max-width: 1650px) {
