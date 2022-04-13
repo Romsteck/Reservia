@@ -460,6 +460,122 @@ footer h4 {
 
 
 /* ---------- MEDIA QUERIES --------- */
+/* ------- 1200px-1650px ------ */
+@media screen and (max-width: 1650px) {
+
+    #marseille .card {
+        width: 45%;
+    }
+}
+
+/* ------- 992px-1200px ------ */
+@media screen and (max-width: 1200px) {
+
+    #hebergements {
+        flex-wrap: wrap;
+    }
+
+    #marseille .card {
+        width: 44%;
+    }
+
+    #populaires .card {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 240px;
+    }
+}
+
+/* ------- 576px-992px ------ */
+@media screen and (max-width: 992px) {
+    
+    header {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    #Navigation a {
+        height: 50px;
+        width: 33.3%;
+        text-align: center;
+    }
+
+    #Navigation .Button1 {
+        padding: 0px;
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        margin-bottom: 25px;
+    }
+
+    #Navigation .Button2 {
+        padding: 0px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        color: rgba(0, 0, 0, 0.1);
+        margin-bottom: 25px;
+    }
+
+    #Navigation .Button3 {
+        padding: 0px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        margin-bottom: 25px;
+        color: black;
+        font-weight: lighter;
+    }
+    
+    #hebergements {
+        flex-wrap: wrap;
+        padding: 0px;
+        flex-direction: column-reverse;
+    }
+
+    #marseille {
+        width: 100%;
+        margin-right: 50px;
+        background-color: white;
+    }
+
+    #marseille #Lines {
+        flex-wrap: wrap;
+    }
+
+    #marseille .card {
+        width: 44%;
+    }
+
+    #populaires {
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    #populaires ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #populaires .card {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 175px;
+    }
+
+    #HostingActivity {
+        flex-wrap: wrap;
+        height: fit-content;
+        
+    }
+
+    #HostingActivity .card {
+        width: 42%;
+        height: 450px;
+    }
+
+    #HostingActivity .SubCard {
+        height: 500px;
+        width: 42%;
+    }
+}   
 
 /* ------- MAX 576px ------ */
 @media screen and (max-width: 576px) {
@@ -582,122 +698,5 @@ footer h4 {
 
     #HostingActivity .SubCard .card {
         margin-left: 0px;
-    }
-}
-
-/* ------- 576px-992px ------ */
-@media screen and (min-width: 576px) and (max-width: 992px) {
-    
-    header {
-        flex-direction: column;
-        margin-bottom: 0px;
-    }
-
-    #Navigation a {
-        height: 50px;
-        width: 33.3%;
-        text-align: center;
-    }
-
-    #Navigation .Button1 {
-        padding: 0px;
-        border-top: none;
-        border-bottom: 2px solid #0065FC;
-        margin-bottom: 25px;
-    }
-
-    #Navigation .Button2 {
-        padding: 0px;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-        color: rgba(0, 0, 0, 0.1);
-        margin-bottom: 25px;
-    }
-
-    #Navigation .Button3 {
-        padding: 0px;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-        margin-bottom: 25px;
-        color: black;
-        font-weight: lighter;
-    }
-    
-    #hebergements {
-        flex-wrap: wrap;
-        padding: 0px;
-        flex-direction: column-reverse;
-    }
-
-    #marseille {
-        width: 100%;
-        margin-right: 50px;
-        background-color: white;
-    }
-
-    #marseille #Lines {
-        flex-wrap: wrap;
-    }
-
-    #marseille .card {
-        width: 44%;
-    }
-
-    #populaires {
-        border-radius: 0px;
-        width: 100%;
-    }
-
-    #populaires ul {
-        display: flex;
-        flex-direction: row;
-    }
-
-    #populaires .card {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        height: 175px;
-    }
-
-    #HostingActivity {
-        flex-wrap: wrap;
-        height: fit-content;
-        
-    }
-
-    #HostingActivity .card {
-        width: 42%;
-        height: 450px;
-    }
-
-    #HostingActivity .SubCard {
-        height: 500px;
-        width: 42%;
-    }
-}   
-
-/* ------- 992px-1200px ------ */
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-
-    #hebergements {
-        flex-wrap: wrap;
-    }
-
-    #marseille .card {
-        width: 44%;
-    }
-
-    #populaires .card {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        height: 240px;
-    }
-}
-
-/* ------- 1200px-1650px ------ */
-@media screen and (min-width: 1200px) and (max-width: 1650px) {
-
-    #marseille .card {
-        width: 45%;
     }
 }
