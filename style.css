@@ -511,7 +511,7 @@ footer h4 {
     #Navigation .Button2 {
         padding: 0px;
         border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-        color: rgba(0, 0, 0, 0.1);
+        color: black;
         margin-bottom: 25px;
     }
 
@@ -519,8 +519,6 @@ footer h4 {
         padding: 0px;
         border-bottom: 2px solid rgba(0, 0, 0, 0.1);
         margin-bottom: 25px;
-        color: black;
-        font-weight: lighter;
     }
     
     #hebergements {
@@ -645,8 +643,9 @@ footer h4 {
     #Navigation .Button3 {
         width: 50px;
         position: absolute;
-        top: 0px;
+        top: 50px;
         right: 80px;
+        border: none;
     }
 
     #hebergements {
