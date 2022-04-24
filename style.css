@@ -79,7 +79,8 @@ header {
 
 /* Search */
 #SearchSection {
-    padding-left: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 #SearchSection h2 {
     font-family: "Raleway-Bold";
@@ -236,8 +237,8 @@ header {
 
 #hebergements {
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: space-between  ;
+    margin: 40px;
 }
 #hebergements h2 {
     padding: 15px;
@@ -306,7 +307,8 @@ mark {
 
 /* Hébergements Marseille */
 #marseille {
-    width: 60%;
+    width: 75%;
+    margin-right: 40px;
     padding: 25px;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.05);
@@ -333,7 +335,7 @@ mark {
 
 /* Hébergements Populaires */
 #populaires {
-    width: 30%;
+    width: 25%;
     padding: 15px;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.05);
@@ -386,7 +388,7 @@ mark {
 #HostingActivity {
     display: flex;
     flex-direction: row;
-    padding: 30px;
+    margin: 20px;
     align-items: stretch;
     height: 600px;
     margin-bottom: 25px;
@@ -460,20 +462,63 @@ footer h4 {
 
 
 /* ---------- MEDIA QUERIES --------- */
-/* ------- 1200px-1650px ------ */
-@media screen and (max-width: 1650px) {
+
+/* ------- 2560px+ ------ */
+@media screen and (min-width: 2560px) {
+    
+    #marseille .Photo {
+        height: 70%;
+    }
 
     #marseille .card {
+        height: 400px;
+        width: 30%;
+    }
+
+    #populaires ul {
+        height: 90% ;
+    }
+    #populaires .card {
+        height: auto;
+    }
+
+    #HostingActivity {
+        height: 1000px;
+    }
+    #HostingActivity .SubCard .card {
+        height: 50%;
+    }
+}
+
+/* ------- 1200px-1650px ------ */
+@media screen and (max-width: 1665px) {
+
+    #hebergements {
+        flex-wrap: wrap;
+    }
+
+    #marseille {
+        margin-right: 0px;
+        width: 100%;
+    }
+    #marseille .card {
         width: 45%;
+    }
+
+    #populaires {
+        margin-top: 40px;
+        width: 100%;
+    }
+    #populaires ul {
+        flex-direction: row;
+    }
+    #populaires .card {
+        width: 30%;
     }
 }
 
 /* ------- 992px-1200px ------ */
 @media screen and (max-width: 1200px) {
-
-    #hebergements {
-        flex-wrap: wrap;
-    }
 
     #marseille .card {
         width: 44%;
@@ -528,21 +573,17 @@ footer h4 {
     }
 
     #marseille {
+        padding: 0px;
         width: 100%;
         margin-right: 50px;
         background-color: white;
     }
 
-    #marseille #Lines {
-        flex-wrap: wrap;
-    }
-
     #marseille .card {
-        width: 44%;
+        width: 43%;
     }
 
     #populaires {
-        border-radius: 0px;
         width: 100%;
     }
 
@@ -561,11 +602,11 @@ footer h4 {
     #HostingActivity {
         flex-wrap: wrap;
         height: fit-content;
-        
+        margin-right: 0px;
     }
 
     #HostingActivity .card {
-        width: 42%;
+        width: 40%;
         height: 450px;
     }
 
@@ -595,11 +636,6 @@ footer h4 {
         width: 50px;
         padding-bottom: 12px;
         padding-right: 5px;
-    }
-    
-    #CountAvailableHostings {
-        margin-bottom: 30px;
-        padding-right: 20px
     }
 
     #FilterSection h5 {
@@ -649,6 +685,7 @@ footer h4 {
     }
 
     #hebergements {
+        margin: 0px;
         flex-wrap: wrap;
         padding: 0px;
         flex-direction: column-reverse;
@@ -657,6 +694,7 @@ footer h4 {
     #marseille {
         background-color: white;
         width: 100%;
+        padding: 20px;
     }
 
     #marseille .card {
@@ -664,17 +702,21 @@ footer h4 {
     }
 
     #populaires {
-        width: 100%;
         border-radius: 0px;
+        width: 100%;
     }
 
     #HostingActivity {
         flex-direction: column;
         justify-content: space-between;
         height: auto;
-        padding: 40px;
+        padding: 20px;
         margin-bottom: 0px;
         padding-bottom: 0px;
+    }
+
+    #HostingActivityTitle {
+        margin-left: 40px;
     }
 
     #HostingActivity .card {
@@ -698,4 +740,12 @@ footer h4 {
     #HostingActivity .SubCard .card {
         margin-left: 0px;
     }
+
+    footer ul {
+        padding-left: 40px;
+    }
 }
+
+
+
+
