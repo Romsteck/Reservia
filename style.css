@@ -244,7 +244,7 @@ header {
     padding: 15px;
     font-family: "Raleway-Bold";
 }
-#hebergements ul {
+#hebergements .ListDefaults {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -264,7 +264,7 @@ header {
     object-fit: cover;
 }
 
-#GalleryTitles {
+.GalleryTitles {
     padding-bottom: 10px;
     font-family: "Raleway-Bold";
 }
@@ -436,14 +436,14 @@ footer {
     padding-bottom: 50px;
     padding-top: 25px
 }
-footer ul {
+footer div {
     display: flex;
     flex-direction: column;
     padding-right: 15%;
     padding-left: 60px;
     padding-top: 25px;
 }
-footer ul a {
+footer div a {
     font-family: "Raleway-Light";
     text-decoration: none;
     padding: 5px;
