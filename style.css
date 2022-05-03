@@ -313,16 +313,14 @@ mark {
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.05);
 }
-#marseille ul {
-    justify-content: space-between;
-}
-#marseille #Lines {
-    display: flex;
-    width: 100%;
+#marseille .FirstCard {
+    width: 33%;
+    padding: 15px;
 }
 #marseille .card {
     height: 250px;
-    width: 30%;
+    width: 100%;
+    margin: 0px;
 }
 #marseille #ShowMore {
     padding: 20px;
@@ -501,8 +499,15 @@ footer h4 {
         margin-right: 0px;
         width: 100%;
     }
+
+    #marseille .FirstCard {
+        width: 50%;
+        padding: 15px;
+    }
     #marseille .card {
-        width: 45%;
+        height: 250px;
+        width: 100%;
+        margin: 0px;
     }
 
     #populaires {
@@ -519,10 +524,6 @@ footer h4 {
 
 /* ------- 992px-1200px ------ */
 @media screen and (max-width: 1200px) {
-
-    #marseille .card {
-        width: 44%;
-    }
 
     #populaires .card {
         width: 100%;
@@ -542,7 +543,7 @@ footer h4 {
 
     #Navigation a {
         height: 50px;
-        width: 33.3%;
+        width: 50%;
         text-align: center;
     }
 
@@ -555,15 +556,16 @@ footer h4 {
 
     #Navigation .Button2 {
         padding: 0px;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-        color: black;
+        border-bottom: 2px solid silver;
         margin-bottom: 25px;
     }
 
     #Navigation .Button3 {
-        padding: 0px;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-        margin-bottom: 25px;
+        width: 50px;
+        position: absolute;
+        top: 5px;
+        right: 80px;
+        border: none;
     }
     
     #hebergements {
@@ -572,19 +574,27 @@ footer h4 {
         flex-direction: column-reverse;
     }
 
+    .ListDefaults {
+        margin: 0px;
+    }
+
     #marseille {
         padding: 0px;
         width: 100%;
-        margin-right: 50px;
         background-color: white;
     }
 
+    #marseille .FirstCard {
+        width: 100%;
+    }
+
     #marseille .card {
-        width: 43%;
+        margin: 5px;
     }
 
     #populaires {
         width: 100%;
+        margin-bottom: 25px;
     }
 
     #populaires ul {
@@ -677,11 +687,7 @@ footer h4 {
     }
 
     #Navigation .Button3 {
-        width: 50px;
-        position: absolute;
-        top: 50px;
-        right: 80px;
-        border: none;
+        top: 10px
     }
 
     #hebergements {
